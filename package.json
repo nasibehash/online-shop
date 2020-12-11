@@ -1,0 +1,15 @@
+{
+    "name": "habib",
+    "version": "1.0.0",
+    "description": "online shopping",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass scss/bootstrap.scss css/style.css -w"
+    },
+    "author": "nasibeh ashtari",
+    "license": "ISC",
+    "devDependencies": {
+        "jquery": "^3.5.1",
+        "node-sass": "^5.0.0"
+    }
+}

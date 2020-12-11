@@ -1,0 +1,315 @@
+/* BANNER SECTION */
+
+.section__banner {
+    margin: 50px;
+    &--single {
+        padding-bottom: 20px;
+        &-thumb {
+            position: relative;
+            overflow: hidden;
+            border: $border;
+            padding: 5px;
+            a {
+                img {
+                    -webkit-transition: all 0.3s;
+                    transition: transform .5s;
+                }
+                img:hover {
+                    opacity: .7;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+
+/* FEATURED PRODUCT SECTION */
+
+.section__featured--product {
+    .owl-item {
+        position: relative;
+        .item {
+            border: $border;
+            padding: 5px;
+        }
+        .info {
+            padding: 5px;
+            border: $border;
+            background-color: $white;
+            .price {
+                float: left;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                h4 {
+                    line-height: 20px;
+                    display: block;
+                    margin: 25px auto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: center;
+                    a {
+                        display: block;
+                    }
+                }
+                .price_box {
+                    display: flex;
+                    font-family: Vazir-Light-FD-WOL;
+                    margin: 0px 10px;
+                }
+                span.old_price {
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    font-size: 14px;
+                    float: left;
+                }
+                span.current_price {
+                    color: #f30;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-top: 3px;
+                }
+                .price-text-color {
+                    color: #219FD1;
+                }
+            }
+            .separator {
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                margin-top: 20px;
+                p {
+                    line-height: 20px;
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                    text-align: center;
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+                .btn-add {
+                    width: 50%;
+                    float: left;
+                    border-right: 1px solid rgba(0, 0, 0, 0.1);
+                    font-size: 14px !important;
+                    font-weight: bolder;
+                    i {
+                        padding-left: 5px;
+                    }
+                }
+                .btn-details {
+                    width: 50%;
+                    float: left;
+                    padding-left: 10px;
+                    font-weight: bolder;
+                    font-size: 14px !important;
+                    i {
+                        padding-left: 5px;
+                    }
+                }
+            }
+            .clear-left {
+                clear: left;
+            }
+            .label_sale {
+                position: absolute;
+                top: -30px;
+                right: 40%;
+                width: 45px;
+                text-align: center;
+                line-height: 45px;
+                height: 45px;
+                background: $red;
+                font-family: Vazir-Light-FD-WOL;
+                border-radius: 100%;
+                color: $color-light-dark;
+            }
+        }
+        .item_side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            overflow: hidden;
+            transition: all .8s ease;
+        }
+    }
+    .owl-item:hover .info {
+        display: block;
+    }
+}
+
+
+/* OFFER PRODUCT SECTION */
+
+.section__offer--product {
+    margin-bottom: 40px;
+    .owl-item {
+        position: relative;
+        .item {
+            border: $border;
+            padding: 5px;
+        }
+        .info {
+            padding: 5px;
+            border: $border;
+            background-color: $white;
+            .price {
+                float: left;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                h4 {
+                    line-height: 20px;
+                    display: block;
+                    margin: 25px auto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: center;
+                    a {
+                        display: block;
+                    }
+                }
+                .price_box {
+                    display: flex;
+                    font-family: Vazir-Light-FD-WOL;
+                    margin: 0px 10px;
+                }
+                span.old_price {
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    font-size: 14px;
+                    float: left;
+                }
+                span.current_price {
+                    color: #f30;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-top: 3px;
+                }
+                .price-text-color {
+                    color: #219FD1;
+                }
+            }
+            .separator {
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                margin-top: 20px;
+                p {
+                    line-height: 20px;
+                    margin-bottom: 0;
+                    margin-top: 10px;
+                    text-align: center;
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+                .btn-add {
+                    width: 50%;
+                    float: left;
+                    border-right: 1px solid rgba(0, 0, 0, 0.1);
+                    font-size: 14px !important;
+                    font-weight: bolder;
+                    i {
+                        padding-left: 5px;
+                    }
+                }
+                .btn-details {
+                    width: 50%;
+                    float: left;
+                    padding-left: 10px;
+                    font-weight: bolder;
+                    font-size: 14px !important;
+                    i {
+                        padding-left: 5px;
+                    }
+                }
+            }
+            .clear-left {
+                clear: left;
+            }
+            .label_sale {
+                position: absolute;
+                top: -30px;
+                right: 40%;
+                width: 45px;
+                text-align: center;
+                line-height: 45px;
+                height: 45px;
+                background: $red;
+                font-family: Vazir-Light-FD-WOL;
+                border-radius: 100%;
+                color: $color-light-dark;
+            }
+        }
+        .item_side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            // -webkit-backface-visibility: hidden;
+            // backface-visibility: hidden;
+            display: none;
+            // border-radius: 3px;
+            overflow: hidden;
+            transition: all .8s ease;
+        }
+    }
+    .owl-item:hover .info {
+        display: block;
+    }
+}
+
+
+/* SHIPPING SECTION */
+
+.section__shipping {
+    .shipping_inner {
+        border-top: $border;
+        padding: 30px 0;
+        .single_shipping {
+            // border-left: 1px solid $color-line;
+            display: flex;
+            align-items: center;
+            ;
+            ;
+            padding-bottom: 5px;
+            .shipping_icone {
+                height: 50px;
+                width: 50px;
+                line-height: 48px;
+                border: $border;
+                border-radius: 100%;
+                text-align: center;
+                transition: .3s;
+                margin-left: 11px;
+                i {
+                    font-size: 20px;
+                    line-height: 48px;
+                    display: block;
+                    transition: .3s;
+                    color: $red;
+                }
+                .icon-truck:before {
+                    content: "\e9e8";
+                }
+            }
+            .shipping_content {
+                h3 {
+                    font-size: 14px;
+                    color: inherit;
+                    font-weight: 700;
+                    margin-bottom: 4px;
+                    font-family: Vazir-Light-FD-WOL;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 991px) {}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {}
+
+@media only screen and (max-width: 481px) and (min-width: 300px) {}

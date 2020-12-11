@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 14px; //1 rem = 10px; 10px/16px = 62.5%
+    @include respond(tab-land) {
+        // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+    @include respond(tab-port) {
+        // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+    background: #fff;
+    font-family: Vazir-FD-WOL !important;
+    direction: rtl !important;
+}
+
+body {
+    box-sizing: border-box;
+    @include respond(tab-port) {
+        padding: 0;
+    }
+    // color: #212529be !important;
+    color: $color-light-dark !important;
+    text-align: right !important;
+}
+
+
+/* ---------------------------------------- */
+
+
+/* ----- GENERAL STYLES ----- */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    transition: 0.5s;
+    outline: 0 !important;
+    cursor: pointer;
+    color: inherit !important;
+}
+
+a:hover {
+    color: $red !important;
+}
+
+button:hover {}
+
+button,
+a,
+input[type="submit"] {
+    cursor: pointer;
+}
+
+button {
+    font-size: 14px !important;
+    font-weight: bolder !important;
+    color: $white !important;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* BREADCRUMB SECTION */
+
+.section__breadcrumbs {
+    background-color: $color-light-gray;
+    .breadcrumb_content {
+        font-family: Vazir-FD-WOL;
+        padding: 16px 0;
+        //  margin-top: 60px;
+        ul li {
+            display: inline-block;
+            text-transform: capitalize;
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+            a {
+                color: $color-black !important;
+            }
+            a.active {
+                color: $red !important;
+            }
+        }
+    }
+}
+
+
+/* ------ SECTION TITLE ------ */
+
+.section_title {
+    margin-bottom: 20px;
+    h2 {
+        color: inherit;
+        font-size: 20px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 2rem;
+        font-family: Vazir-Bold-FD-WOL;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .section_title {
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .section__breadcrumbs {
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 481px) and (min-width: 375px) {
+    .section__breadcrumbs {
+        padding-right: 20px;
+    }
+}
